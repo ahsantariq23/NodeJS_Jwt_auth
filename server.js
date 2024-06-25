@@ -35,11 +35,7 @@ app.post("/login",(req,res)=>{
 
 function authenticateToken(req,res,next){
 
-
-
-
-
-    const authHeader=req.headers['authorization']   //this will get the authorization part from req body   --->>>>> Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+    const authHeader=req.headers['authorization']   //this will get the authorization part from req body   --->>>>> Authorization: Bearer just sample
 
 //authHeader.split(' ') splits the string into an array ['Bearer', '<token>'].
 //authHeader.split(' ')[1] retrieves the token part of the array.
